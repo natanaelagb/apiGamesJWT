@@ -70,7 +70,7 @@ app.post("/auth",(req, res) => {
 
 
 app.get("/games", auth,(req, res) => {
-   res.json({user: req.loggedUser, DB});
+   res.json(DB);
    res.status(200);
 })
 
